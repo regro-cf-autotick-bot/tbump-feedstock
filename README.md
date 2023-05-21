@@ -1,11 +1,11 @@
-About tbump
-===========
+About tbump-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tbump-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dmerejkowsky/tbump
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tbump-feedstock/blob/main/LICENSE.txt)
 
 Summary: Bump software releases
 
