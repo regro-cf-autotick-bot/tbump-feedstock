@@ -1,5 +1,5 @@
 {% set name = "tbump" %}
-{% set version = "6.10.0" %}
+{% set version = "6.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tbump-{{ version }}.tar.gz
-  sha256: 9ebf5d69bc92ca8be1afb13a80f51e374526cb9988f4c3b167036a9e8a10a684
+  sha256: 385e710eedf0a8a6ff959cf1e9f3cfd17c873617132fc0ec5f629af0c355c870
 
 build:
   number: 0
