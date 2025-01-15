@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tbump-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tbump-{{ version }}.tar.gz
   sha256: 9ebf5d69bc92ca8be1afb13a80f51e374526cb9988f4c3b167036a9e8a10a684
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - tbump = tbump.cli:main
@@ -20,12 +20,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,<4.0
+    - python {{ python_min }}
     - poetry
   run:
     - cli-ui >=0.10.3
     - docopt >=0.6.2
-    - python >=3.6,<4.0
+    - python >={{ python_min }},<4.0
     - schema >=0.7.1
     - tomlkit >=0.5.8
 
@@ -37,6 +37,7 @@ test:
     - tbump --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/dmerejkowsky/tbump
